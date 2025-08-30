@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  Patterns
+//  Simple Rectange 4x4 Pattern
 //
 //  Created by Arnav Gupta on 30/08/2025.
 //
