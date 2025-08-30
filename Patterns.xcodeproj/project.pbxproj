@@ -16,16 +16,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		F50BFBE42E62E26C00AEE87E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F50BFBD82E62E24100AEE87E /* Patterns */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Patterns; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50BFBE62E62E26C00AEE87E /* Simple Rectange 4x4 Pattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Simple Rectange 4x4 Pattern"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		F50BFBDA2E62E24100AEE87E /* Patterns */ = {
+		F50BFBE72E62E26C00AEE87E /* Simple Rectange 4x4 Pattern */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Patterns;
+			path = "Simple Rectange 4x4 Pattern";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -38,13 +48,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F50BFBE32E62E26C00AEE87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		F50BFBCF2E62E24100AEE87E = {
 			isa = PBXGroup;
 			children = (
-				F50BFBDA2E62E24100AEE87E /* Patterns */,
+				F50BFBE72E62E26C00AEE87E /* Simple Rectange 4x4 Pattern */,
 				F50BFBD92E62E24100AEE87E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				F50BFBD82E62E24100AEE87E /* Patterns */,
+				F50BFBE62E62E26C00AEE87E /* Simple Rectange 4x4 Pattern */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,14 +90,33 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				F50BFBDA2E62E24100AEE87E /* Patterns */,
-			);
 			name = Patterns;
 			packageProductDependencies = (
 			);
 			productName = Patterns;
 			productReference = F50BFBD82E62E24100AEE87E /* Patterns */;
+			productType = "com.apple.product-type.tool";
+		};
+		F50BFBE52E62E26C00AEE87E /* Simple Rectange 4x4 Pattern */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F50BFBEA2E62E26C00AEE87E /* Build configuration list for PBXNativeTarget "Simple Rectange 4x4 Pattern" */;
+			buildPhases = (
+				F50BFBE22E62E26C00AEE87E /* Sources */,
+				F50BFBE32E62E26C00AEE87E /* Frameworks */,
+				F50BFBE42E62E26C00AEE87E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				F50BFBE72E62E26C00AEE87E /* Simple Rectange 4x4 Pattern */,
+			);
+			name = "Simple Rectange 4x4 Pattern";
+			packageProductDependencies = (
+			);
+			productName = "Simple Rectange 4x4 Pattern";
+			productReference = F50BFBE62E62E26C00AEE87E /* Simple Rectange 4x4 Pattern */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -92,6 +129,9 @@
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
 					F50BFBD72E62E24100AEE87E = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					F50BFBE52E62E26C00AEE87E = {
 						CreatedOnToolsVersion = 16.4;
 					};
 				};
@@ -111,12 +151,20 @@
 			projectRoot = "";
 			targets = (
 				F50BFBD72E62E24100AEE87E /* Patterns */,
+				F50BFBE52E62E26C00AEE87E /* Simple Rectange 4x4 Pattern */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F50BFBD42E62E24100AEE87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50BFBE22E62E26C00AEE87E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -263,6 +311,26 @@
 			};
 			name = Release;
 		};
+		F50BFBEB2E62E26C00AEE87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JRT62ZC8PC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F50BFBEC2E62E26C00AEE87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JRT62ZC8PC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -280,6 +348,15 @@
 			buildConfigurations = (
 				F50BFBE02E62E24100AEE87E /* Debug */,
 				F50BFBE12E62E24100AEE87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F50BFBEA2E62E26C00AEE87E /* Build configuration list for PBXNativeTarget "Simple Rectange 4x4 Pattern" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50BFBEB2E62E26C00AEE87E /* Debug */,
+				F50BFBEC2E62E26C00AEE87E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

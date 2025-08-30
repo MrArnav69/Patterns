@@ -1,14 +1,25 @@
-//
-//  main.cpp
-//  Simple Rectange 4x4 Pattern
-//
-//  Created by Arnav Gupta on 30/08/2025.
-//
+#include<iostream>
+using namespace std;
 
-#include <iostream>
+void printRectangle(int l, int b){
+    for(int i = 0; i<b; i++){
+        for(int j = 0; j<l; j++){
+            cout<<"* ";
+        }
+        cout<<endl;
+    }
+    
+}
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main(){
+    
+    int l, b;
+    cout<<"Enter the length: ";
+    cin>>l;
+    cout<<"Enter the breadth: ";
+    cin>>b;
+    
+    printRectangle(l, b);
+    
     return 0;
 }
